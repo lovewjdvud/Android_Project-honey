@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.BuyNoBankBookActivity_s"
+    android:gravity="center">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:src="@drawable/buy_completion"
+        />
+    <LinearLayout
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="@drawable/textview_custom"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="2"
+        android:text="구매 내역"
+        android:textSize="20dp"
+        android:gravity="bottom"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:id="@+id/noBankBook_buyAll_tv_s"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="2"
+        android:text="구매 내역-----"
+        android:textSize="18dp"
+        android:layout_marginHorizontal="10dp"
+        />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_weight="1"
+        android:background="@drawable/textview_custom"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:text="받는 주소"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/noBankBook_buyAddr_tv_s"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_weight="1"
+            android:text="받는 주소-----"
+            android:textSize="18dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="@drawable/textview_custom"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="2"
+        android:text="요청 사항"
+        android:textSize="20dp"
+        android:gravity="bottom"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginBottom="10dp"
+        />
+    <TextView
+        android:id="@+id/noBankBook_buyRequest_tv_s"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="2"
+        android:text="요청 사항-----"
+        android:textSize="18dp"
+        android:layout_marginHorizontal="10dp"
+        />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1.5"
+        android:orientation="vertical"
+        android:background="@drawable/buy_completion_custom"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp"
+        >
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:paddingHorizontal="10dp"
+        >
+        <TextView
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="주문금액"
+            android:textSize="15dp"
+            />
+
+        <TextView
+            android:id="@+id/noBankBook_priceResult_tv_s"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:gravity="right|center_vertical"
+            android:layout_weight="1"
+            android:text="11,900원"
+            android:textSize="15dp"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:paddingHorizontal="10dp"
+        >
+        <TextView
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="배달팁"
+            android:textSize="15dp"
+            />
+
+        <TextView
+            android:id="@+id/noBankBook_deliveryTip_tv_s"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:gravity="right|center_vertical"
+            android:layout_weight="1"
+            android:text="3,000원"
+            android:textSize="15dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:paddingHorizontal="10dp"
+
+
+        >
+
+        <TextView
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="총 결제금액"
+            android:textSize="20dp"
+            />
+
+        <TextView
+            android:id="@+id/noBankBook_deliveryPrice_tv_s"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:gravity="right|center_vertical"
+            android:layout_weight="1"
+            android:text="11,900원"
+            android:textSize="20dp"
+            />
+
+    </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingHorizontal="10dp"
+        android:layout_marginTop="20dp"
+        >
+
+        <Button
+            android:id="@+id/noBankBook_orderDetail_btn_s"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginHorizontal="20dp"
+            android:text="주문상세보기"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/noBankBook_shopping_btn_s"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginHorizontal="20dp"
+            android:text="쇼핑하러가기"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+</LinearLayout>

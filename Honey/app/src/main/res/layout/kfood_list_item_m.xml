@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/list_item_set"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="top"
+    android:gravity="top"
+    android:orientation="vertical"
+    android:layout_margin="3dp"
+    android:layout_marginBottom="10dp"
+    >
+
+    <!--    메뉴이미지2-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/textview_custom"
+        android:padding="10dp"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            android:id="@+id/imageVIew_kfood_mImage2"
+            android:layout_width="300px"
+            android:layout_height="300px"
+            android:layout_gravity="top"/>
+        <!--    메뉴명-->
+        <TextView
+            android:id="@+id/textVIew_kfood_mName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="한식"
+            android:textSize="20dp"
+            android:layout_marginLeft="20dp"/>
+    </LinearLayout>
+
+
+    <!--    안보이는 정보들 ___________________________________-->
+    <!--이미지 -->
+    <TextView
+        android:id="@+id/imageVIew_kfood_mImagePath"
+        android:layout_width="0px"
+        android:layout_height="0px"
+        android:text="mCode" />
+    <!--코드-->
+    <TextView
+        android:id="@+id/textVIew_kfood_mCode"
+        android:layout_width="0px"
+        android:layout_height="0px"
+        android:text="mCode" />
+
+    <!--추가날짜-->
+    <TextView
+        android:id="@+id/textVIew_kfood_mAddDay"
+        android:layout_width="0px"
+        android:layout_height="0px"
+        android:text="mCode" />
+
+    <!--카테고리명-->
+    <TextView
+        android:id="@+id/textVIew_kfood_mCategory"
+        android:layout_width="0px"
+        android:layout_height="0px"
+        android:text="mCode" />
+</LinearLayout>

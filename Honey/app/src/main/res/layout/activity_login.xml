@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ly_login_framelayout"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Login_s">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/login_background"
+            />
+    <LinearLayout
+        android:id="@+id/login_linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/login"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="10dp"
+                >
+                <EditText
+                    android:id="@+id/login_edit_id_j"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:hint="ID"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:background="@drawable/textview_custom"
+                    />
+
+
+                <!--   자동 로그인 id 띄우기 버튼 -->
+                <ListView
+                    android:id="@+id/list_login_id_j"
+
+                    android:layout_width="250dp"
+                    android:layout_height="35dp"
+                    android:background="#DCD5CB"
+                    />
+
+
+                <!--   로그인 pw -->
+                <EditText
+
+                    android:id="@+id/login_edit_pw_j"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:hint="PW"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:background="@drawable/textview_custom"
+                    />
+
+                <!--   로그인 버튼 -->
+
+                <ListView
+                    android:id="@+id/list_login_pw_j"
+
+                    android:background="#DCD5CB"
+                    android:layout_width="250dp"
+                    android:layout_height="35dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <Button
+                    android:id="@+id/login_btn_justlogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:text="로그인"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:backgroundTint="@color/point"
+                    />
+            </LinearLayout>
+        </LinearLayout><!--   아이디 찾기,비밀번호찾기 시작 -->
+        <LinearLayout
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="60dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/login_id_find"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="아이디 찾기"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/login_pw_find"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="비밀번호 찾기"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_marginLeft="90dp"
+                android:id="@+id/login_join"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#E91E63"
+                android:text="회원가입"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+        <!--   아이디 찾기 비밀번호찾기 끝 -->
+        <LinearLayout
+            android:id="@+id/kaka"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dp">
+            <!--  구글 로그인 시작-->
+            <com.google.android.gms.common.SignInButton
+                android:id="@+id/login_btn_google"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#4C4B4B"
+                android:layout_marginRight="30dp"/>
+
+
+
+
+
+            <!--  카카오 로그인 시작-->
+            <com.kakao.usermgmt.LoginButton
+                android:id="@+id/kakao_login_btn"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"/>
+
+
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+<!--    &lt;!&ndash;   로그인 시작 &ndash;&gt;-->
+<!--        <LinearLayout-->
+<!--        android:id="@+id/login_linearlayout"-->
+<!--        android:orientation="vertical"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:gravity="center"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+<!--        <ImageView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:src="@drawable/honey_logo"-->
+<!--            android:gravity="center"-->
+<!--            android:layout_marginBottom="10dp"-->
+<!--            />-->
+
+<!--        &lt;!&ndash;   로그인 id &ndash;&gt;-->
+<!--        <EditText-->
+<!--            android:id="@+id/login_edit_id_j"-->
+<!--            android:layout_width="250dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint="ID"-->
+<!--            android:paddingLeft="10dp"-->
+<!--            android:paddingRight="10dp"-->
+<!--            android:paddingBottom="5dp"-->
+<!--            android:paddingTop="5dp"-->
+<!--            android:background="@drawable/textview_custom"-->
+<!--            />-->
+
+
+<!--           &lt;!&ndash;   자동 로그인 id 띄우기 버튼 &ndash;&gt;-->
+<!--           <ListView-->
+<!--            android:id="@+id/list_login_id_j"-->
+
+<!--            android:layout_width="250dp"-->
+<!--            android:layout_height="35dp"-->
+<!--               android:background="#DCD5CB"-->
+<!--               />-->
+
+
+<!--            &lt;!&ndash;   로그인 pw &ndash;&gt;-->
+<!--            <EditText-->
+
+<!--                android:id="@+id/login_edit_pw_j"-->
+<!--                android:layout_width="250dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:inputType="textPassword"-->
+<!--                android:hint="PW"-->
+<!--                android:paddingLeft="10dp"-->
+<!--                android:paddingRight="10dp"-->
+<!--                android:paddingBottom="5dp"-->
+<!--                android:paddingTop="5dp"-->
+<!--                android:background="@drawable/textview_custom"-->
+<!--                />-->
+
+<!--        &lt;!&ndash;   로그인 버튼 &ndash;&gt;-->
+
+<!--                <ListView-->
+<!--                 android:id="@+id/list_login_pw_j"-->
+
+<!--                    android:background="#DCD5CB"-->
+<!--                   android:layout_width="250dp"-->
+<!--                    android:layout_height="35dp"-->
+<!--                    />-->
+
+<!--            <Button-->
+
+<!--                android:id="@+id/login_btn_justlogin"-->
+<!--                android:layout_width="250dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="로그인"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textStyle="bold"-->
+<!--                android:backgroundTint="@color/point"-->
+<!--                />-->
+
+
+<!--        &lt;!&ndash;   아이디 찾기,비밀번호찾기 시작 &ndash;&gt;-->
+<!--         <LinearLayout-->
+<!--             android:gravity="center"-->
+<!--             android:orientation="horizontal"-->
+<!--             android:layout_width="match_parent"-->
+<!--             android:layout_height="wrap_content">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/login_id_find"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="아이디 찾기"-->
+<!--            android:layout_marginRight="10dp"-->
+<!--            android:textStyle="bold"-->
+<!--            />-->
+
+<!--             <TextView-->
+<!--                 android:id="@+id/login_pw_find"-->
+<!--                 android:layout_width="wrap_content"-->
+<!--                 android:layout_height="wrap_content"-->
+<!--                 android:text="비밀번호 찾기"-->
+<!--                 android:textStyle="bold"/>-->
+
+<!--         </LinearLayout>-->
+<!--        &lt;!&ndash;   아이디 찾기 비밀번호찾기 끝 &ndash;&gt;-->
+
+
+
+
+<!--    &lt;!&ndash;   카카오 로그인, 구글 로그인 시작&ndash;&gt;-->
+<!--    <LinearLayout-->
+<!--        android:id="@+id/kaka"-->
+<!--        android:layout_marginTop="150dp"-->
+<!--        android:gravity="center"-->
+<!--        android:orientation="vertical"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+<!--        &lt;!&ndash;  구글 로그인 시작&ndash;&gt;-->
+<!--        <com.google.android.gms.common.SignInButton-->
+<!--            android:id="@+id/login_btn_google"-->
+<!--            android:layout_width="250dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:backgroundTint="#4C4B4B"/>-->
+
+
+
+
+
+<!--        &lt;!&ndash;  카카오 로그인 시작&ndash;&gt;-->
+<!--        <com.kakao.usermgmt.LoginButton-->
+<!--           android:layout_marginTop="10dp"-->
+<!--            android:id="@+id/kakao_login_btn"-->
+<!--        android:layout_width="250dp"-->
+<!--        android:layout_height="45dp"/>-->
+
+
+
+
+
+<!--        </LinearLayout>-->
+<!--            &lt;!&ndash;   카카오 로그인, 구글 로그인 끝 &ndash;&gt;-->
+
+<!--        &lt;!&ndash; 회원가입 시작 &ndash;&gt;-->
+<!--    <LinearLayout-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:gravity="center"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+
+
+<!--        <TextView-->
+<!--            android:layout_marginRight="10dp"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="꿀재료가 처음인가요?"/>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/login_join"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:textColor="#E91E63"-->
+<!--            android:text="회원가입"-->
+<!--            android:textStyle="bold"/>-->
+
+<!--    </LinearLayout>-->
+<!--        &lt;!&ndash; 회원가입 끝 &ndash;&gt;-->
+
+<!--    </LinearLayout>-->
+<!--    &lt;!&ndash;   로그인 끝 &ndash;&gt;-->
+</FrameLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context=".Activity.BottomSheetNonClient_y">
+
+    <WebView
+        android:id="@+id/wv_bottomsheet_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/btn_detail_show"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="자세히보기"
+            android:layout_marginRight="5dp"
+            android:textStyle="bold"
+            />
+        <Button
+            android:id="@+id/btn_close"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="닫기"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+</LinearLayout>

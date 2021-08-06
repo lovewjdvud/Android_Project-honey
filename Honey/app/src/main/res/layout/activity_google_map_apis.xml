@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.GoogleMapAPIActivity_s"
+    android:layout_margin="20dp"
+    >
+
+
+    <fragment
+
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="2"
+        tools:context=".MapsActivity" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="상호 : (주)꿀재료\n
+대표 : 강예진, 김민재, 송정평, 이승연\n
+이메일 : official@honeyingredients.com\n
+전화 : 1600-0000\n
+주소 : 서울특별시 서초구 서초동 1305 서산빌딩\n
+사업자등록번호 : 123-45-67890\n
+통신판매업신고 : 2021-서울서초-0000\n
+개인정보보호책임자 : 강동원\n
+ⓒ Honey Ingredients All Rights Reserved."
+        />
+
+</LinearLayout>
